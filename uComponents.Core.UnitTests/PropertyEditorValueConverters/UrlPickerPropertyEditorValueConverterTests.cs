@@ -2,7 +2,7 @@
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-    using uComponents.DataTypes.UrlPicker.Dto;
+    using umbraco.editorControls.UrlPicker.Dto;
     using uComponents.PropertyEditors.ValueConverters.UrlPicker;
 
     using Umbraco.Core.PropertyEditors;
@@ -15,7 +15,7 @@
         [TestInitialize]
         public void Initialize()
         {
-            this.converter = new UrlPickerModelBinder();
+            this.converter = new UrlPickerPropertyEditorValueConverter();
         }
 
         [TestMethod]

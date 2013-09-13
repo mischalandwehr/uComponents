@@ -4,8 +4,8 @@ using uComponents.DataTypes.Shared.Extensions;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.editorControls;
 
-[assembly: WebResource("uComponents.DataTypes.UrlPicker.UrlPickerScripts.js", Constants.MediaTypeNames.Application.JavaScript)]
-[assembly: WebResource("uComponents.DataTypes.UrlPicker.UrlPickerStyles.css", Constants.MediaTypeNames.Text.Css, PerformSubstitution = true)]
+[assembly: WebResource("uComponents.Legacy.DataTypes.UrlPicker.UrlPickerScripts.js", Constants.MediaTypeNames.Application.JavaScript)]
+[assembly: WebResource("uComponents.Legacy.DataTypes.UrlPicker.UrlPickerStyles.css", Constants.MediaTypeNames.Text.Css)]
 
 namespace uComponents.DataTypes.UrlPicker
 {
@@ -31,7 +31,7 @@ namespace uComponents.DataTypes.UrlPicker
 		/// <param name="ctl"></param>
 		public static void AddCssUrlPickerClientDependencies(this Control ctl)
 		{
-			ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.UrlPicker.UrlPickerStyles.css", ClientDependencyType.Css);
+			ctl.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.UrlPicker.UrlPickerStyles.css", ClientDependencyType.Css);
 		}
 
 		/// <summary>
@@ -43,7 +43,7 @@ namespace uComponents.DataTypes.UrlPicker
 			// TODO: [LK] 'json2.js' now ships with Umbraco core, we can re-reference to this.
 			ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.json2.js", ClientDependencyType.Javascript);
 			ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.jquery.form.js", ClientDependencyType.Javascript);
-			ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.UrlPicker.UrlPickerScripts.js", ClientDependencyType.Javascript);
+			ctl.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.UrlPicker.UrlPickerScripts.js", ClientDependencyType.Javascript);
 		}
 	}
 }

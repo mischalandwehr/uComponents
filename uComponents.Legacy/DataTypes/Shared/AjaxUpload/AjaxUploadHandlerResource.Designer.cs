@@ -39,7 +39,7 @@ namespace uComponents.DataTypes.Shared.AjaxUpload
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("uComponents.DataTypes.Shared.AjaxUpload.AjaxUploadHandlerResource", typeof(AjaxUploadHandlerResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("uComponents.Legacy.DataTypes.Shared.AjaxUpload.AjaxUploadHandlerResource", typeof(AjaxUploadHandlerResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace uComponents.DataTypes.Shared.AjaxUpload
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;%@ WebHandler Language=&quot;C#&quot; Class=&quot;uComponents.Core.Shared.AjaxUpload.AjaxUploadHandler&quot; %&gt;
+        ///   Looks up a localized string similar to &lt;%@ WebHandler Language=&quot;C#&quot; Class=&quot;uComponents.DataTypes.Shared.AjaxUpload.AjaxUploadHandler&quot; %&gt;
         ///.
         /// </summary>
         internal static string AjaxUploadHandler_ashx {

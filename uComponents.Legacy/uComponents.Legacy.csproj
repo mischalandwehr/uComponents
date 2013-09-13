@@ -168,6 +168,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
@@ -267,6 +268,12 @@
     <Compile Include="DataTypes\MultipleTextstring\MultipleTextstringModelBinder.cs" />
     <Compile Include="DataTypes\MultipleTextstring\MultipleTextstringOptions.cs" />
     <Compile Include="DataTypes\MultipleTextstring\MultipleTextstringPrevalueEditor.cs" />
+    <Compile Include="DataTypes\MultiUrlPicker\Dto\MultiUrlPickerSettings.cs" />
+    <Compile Include="DataTypes\MultiUrlPicker\Dto\MultiUrlPickerState.cs" />
+    <Compile Include="DataTypes\MultiUrlPicker\MultiUrlPickerDataEditor.cs" />
+    <Compile Include="DataTypes\MultiUrlPicker\MultiUrlPickerDataType.cs" />
+    <Compile Include="DataTypes\MultiUrlPicker\MultiUrlPickerExtensions.cs" />
+    <Compile Include="DataTypes\MultiUrlPicker\MultiUrlPickerPreValueEditor.cs" />
     <Compile Include="DataTypes\RadiobuttonListWithImages\RLWI_DataEditor.cs" />
     <Compile Include="DataTypes\RadiobuttonListWithImages\RLWI_DataType.cs" />
     <Compile Include="DataTypes\RelatedLinksWithMedia\PagePickerwMediaDataExtractor.cs" />
@@ -274,6 +281,8 @@
     <Compile Include="DataTypes\RelatedLinksWithMedia\RelatedLinkswMediaDataEditor.cs" />
     <Compile Include="DataTypes\RelatedLinksWithMedia\RelatedLinkswMediaDataType.cs" />
     <Compile Include="DataTypes\RelatedLinksWithMedia\RelatedLinkswMediaPrevalueEditor.cs" />
+    <Compile Include="DataTypes\Shared\AjaxUpload\AjaxUploadHandler.cs" />
+    <Compile Include="DataTypes\Shared\AjaxUpload\AjaxUploadHandlerResource.Designer.cs" />
     <Compile Include="DataTypes\Shared\PrevalueEditors\MultiImageUpload_PrevalueEditor.cs" />
     <Compile Include="DataTypes\Slider\SliderControl.cs" />
     <Compile Include="DataTypes\Slider\SliderDataType.cs" />
@@ -300,6 +309,16 @@
     <Compile Include="DataTypes\UniqueProperty\UniquePropertyDataEditor.cs" />
     <Compile Include="DataTypes\UniqueProperty\UniquePropertyDataType.cs" />
     <Compile Include="DataTypes\UniqueProperty\UniquePropertyPreValueEditor.cs" />
+    <Compile Include="DataTypes\UrlPicker\Dto\UrlPickerSettings.cs" />
+    <Compile Include="DataTypes\UrlPicker\Dto\UrlPickerState.cs" />
+    <Compile Include="DataTypes\UrlPicker\Services\UrlPickerService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataTypes\UrlPicker\Services\UrlPickerServiceResource.Designer.cs" />
+    <Compile Include="DataTypes\UrlPicker\UrlPickerDataEditor.cs" />
+    <Compile Include="DataTypes\UrlPicker\UrlPickerDataType.cs" />
+    <Compile Include="DataTypes\UrlPicker\UrlPickerExtensions.cs" />
+    <Compile Include="DataTypes\UrlPicker\UrlPickerPreValueEditor.cs" />
     <Compile Include="DataTypes\XPathCheckBoxList\XPathCheckBoxListDataEditor.cs" />
     <Compile Include="DataTypes\XPathCheckBoxList\XPathCheckBoxListDataType.cs" />
     <Compile Include="DataTypes\XPathCheckBoxList\XPathCheckBoxListModelBinder.cs" />
@@ -367,6 +386,8 @@
     <EmbeddedResource Include="DataTypes\ImageDropdown\Scripts\jquery.dd.js" />
     <EmbeddedResource Include="DataTypes\ImageDropdown\Styles\ImageDropdown.css" />
     <EmbeddedResource Include="DataTypes\MultiNodeTreePicker\MNTPResources.resx" />
+    <EmbeddedResource Include="DataTypes\Shared\AjaxUpload\AjaxUploadHandlerResource.resx" />
+    <EmbeddedResource Include="DataTypes\UrlPicker\Services\UrlPickerServiceResource.resx" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DataTypes\MultiNodeTreePicker\MultiNodePickerScripts.js" />
@@ -390,6 +411,16 @@
     <EmbeddedResource Include="DataTypes\TextImage\images\transparentpixel.gif" />
     <EmbeddedResource Include="DataTypes\TextImage\jquery.simpleColor.js" />
     <EmbeddedResource Include="DataTypes\TextImage\TextImageScripts.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataTypes\MultiUrlPicker\MultiUrlPickerScripts.js" />
+    <EmbeddedResource Include="DataTypes\MultiUrlPicker\MultiUrlPickerStyles.css" />
+    <EmbeddedResource Include="DataTypes\UrlPicker\Services\UrlPickerService.asmx" />
+    <EmbeddedResource Include="DataTypes\UrlPicker\UrlPickerScripts.js" />
+    <EmbeddedResource Include="DataTypes\UrlPicker\UrlPickerStyles.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataTypes\Shared\AjaxUpload\AjaxUploadHandler.ashx.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,8 +4,8 @@ using uComponents.DataTypes.Shared.Extensions;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.editorControls;
 
-[assembly: WebResource("uComponents.DataTypes.MultiUrlPicker.MultiUrlPickerScripts.js", Constants.MediaTypeNames.Application.JavaScript)]
-[assembly: WebResource("uComponents.DataTypes.MultiUrlPicker.MultiUrlPickerStyles.css", Constants.MediaTypeNames.Text.Css, PerformSubstitution = true)]
+[assembly: WebResource("uComponents.Legacy.DataTypes.MultiUrlPicker.MultiUrlPickerScripts.js", Constants.MediaTypeNames.Application.JavaScript)]
+[assembly: WebResource("uComponents.Legacy.DataTypes.MultiUrlPicker.MultiUrlPickerStyles.css", Constants.MediaTypeNames.Text.Css)]
 
 namespace uComponents.DataTypes.MultiUrlPicker
 {
@@ -31,7 +31,7 @@ namespace uComponents.DataTypes.MultiUrlPicker
         /// <param name="ctl"></param>
         public static void AddCssMultiUrlPickerClientDependencies(this Control ctl)
         {
-            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.MultiUrlPicker.MultiUrlPickerStyles.css", ClientDependencyType.Css);
+            ctl.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.MultiUrlPicker.MultiUrlPickerStyles.css", ClientDependencyType.Css);
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace uComponents.DataTypes.MultiUrlPicker
         public static void AddJsMultiUrlPickerClientDependencies(this Control ctl)
         {
             ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.json2.js", ClientDependencyType.Javascript);
-            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.MultiUrlPicker.MultiUrlPickerScripts.js", ClientDependencyType.Javascript);
+            ctl.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.MultiUrlPicker.MultiUrlPickerScripts.js", ClientDependencyType.Javascript);
         }
     }
 }

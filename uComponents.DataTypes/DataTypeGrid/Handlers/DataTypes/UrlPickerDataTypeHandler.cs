@@ -2,8 +2,8 @@ namespace uComponents.DataTypes.DataTypeGrid.Handlers.DataTypes
 {
     using uComponents.Core;
     using uComponents.DataTypes.DataTypeGrid.Model;
-    using uComponents.DataTypes.UrlPicker;
-    using uComponents.DataTypes.UrlPicker.Dto;
+    using umbraco.editorControls.UrlPicker;
+    using umbraco.editorControls.UrlPicker.Dto;
 
     using umbraco;
     using umbraco.interfaces;

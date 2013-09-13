@@ -350,13 +350,6 @@
     <Compile Include="MultipleDates\MD_DataEditor.cs" />
     <Compile Include="MultipleDates\MD_DataType.cs" />
     <Compile Include="MultipleDates\MD_ModelBinder.cs" />
-    <Compile Include="MultiUrlPicker\Dto\MultiUrlPickerSettings.cs" />
-    <Compile Include="MultiUrlPicker\Dto\MultiUrlPickerState.cs" />
-    <Compile Include="MultiUrlPicker\MultiUrlPickerDataEditor.cs" />
-    <Compile Include="MultiUrlPicker\MultiUrlPickerDataType.cs" />
-    <Compile Include="MultiUrlPicker\MultiUrlPickerExtensions.cs" />
-    <Compile Include="MultiUrlPicker\MultiUrlPickerModelBinder.cs" />
-    <Compile Include="MultiUrlPicker\MultiUrlPickerPreValueEditor.cs" />
     <Compile Include="Notes\NotesDataEditor.cs" />
     <Compile Include="Notes\NotesDataType.cs" />
     <Compile Include="Notes\NotesOptions.cs" />
@@ -375,8 +368,6 @@
     <Compile Include="RenderMacro\RenderMacroOptions.cs" />
     <Compile Include="RenderMacro\RenderMacroPrevalueEditor.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="Shared\AjaxUpload\AjaxUploadHandler.cs" />
-    <Compile Include="Shared\AjaxUpload\AjaxUploadHandlerResource.Designer.cs" />
     <Compile Include="Shared\Extensions\DropDownListExtensions.cs" />
     <Compile Include="Shared\Extensions\IRecordsReaderExtensions.cs" />
     <Compile Include="Shared\Models\AutoCompleteItem.cs" />
@@ -434,17 +425,6 @@
     <Compile Include="ToggleBox\TB_DataType.cs" />
     <Compile Include="ToggleBox\TB_Options.cs" />
     <Compile Include="ToggleBox\TB_PrevalueEditor.cs" />
-    <Compile Include="UrlPicker\Dto\UrlPickerSettings.cs" />
-    <Compile Include="UrlPicker\Dto\UrlPickerState.cs" />
-    <Compile Include="UrlPicker\Services\UrlPickerService.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UrlPicker\Services\UrlPickerServiceResource.Designer.cs" />
-    <Compile Include="UrlPicker\UrlPickerDataEditor.cs" />
-    <Compile Include="UrlPicker\UrlPickerDataType.cs" />
-    <Compile Include="UrlPicker\UrlPickerExtensions.cs" />
-    <Compile Include="UrlPicker\UrlPickerModelBinder.cs" />
-    <Compile Include="UrlPicker\UrlPickerPreValueEditor.cs" />
     <Compile Include="UserPicker\UserPickerControl.cs" />
     <Compile Include="UserPicker\UserPickerDataType.cs" />
     <Compile Include="UserPicker\UserPickerOptions.cs" />
@@ -499,10 +479,7 @@
     <EmbeddedResource Include="IncrementalTextBox\Styles\IncrementalTextBox.css" />
     <EmbeddedResource Include="MultipleDates\css\MultipleDates.css" />
     <EmbeddedResource Include="MultipleDates\scripts\main.js" />
-    <EmbeddedResource Include="MultiUrlPicker\MultiUrlPickerScripts.js" />
-    <EmbeddedResource Include="MultiUrlPicker\MultiUrlPickerStyles.css" />
     <EmbeddedResource Include="RelationLinks\RelationLinks.js" />
-    <EmbeddedResource Include="Shared\AjaxUpload\AjaxUploadHandler.ashx.txt" />
     <EmbeddedResource Include="Shared\Resources\Styles\PrevalueEditor.css" />
     <EmbeddedResource Include="Shared\Resources\Scripts\jquery.form.js" />
     <EmbeddedResource Include="Shared\Resources\Scripts\json2.js" />
@@ -532,9 +509,6 @@
     <EmbeddedResource Include="ToggleBox\Images\shadow-bg.png" />
     <EmbeddedResource Include="ToggleBox\Scripts\jquery.togglebox.js" />
     <EmbeddedResource Include="ToggleBox\Styles\ToggleBox.css" />
-    <EmbeddedResource Include="UrlPicker\Services\UrlPickerService.asmx" />
-    <EmbeddedResource Include="UrlPicker\UrlPickerScripts.js" />
-    <EmbeddedResource Include="UrlPicker\UrlPickerStyles.css" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DataTypeGrid\Configuration\DataTypeGrid.config">
@@ -551,11 +525,7 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DtgWebServices.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shared\AjaxUpload\AjaxUploadHandlerResource.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Similarity\SimilarityResources.resx" />
-    <EmbeddedResource Include="UrlPicker\Services\UrlPickerServiceResource.resx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\uComponents.Core\uComponents.Core.csproj">
