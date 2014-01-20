@@ -58,6 +58,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uComponents.DataTypes.Razor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uComponents.PropertyEditors.ValueConverters", "uComponents.PropertyEditors.ValueConverters\uComponents.PropertyEditors.ValueConverters.csproj", "{9DF10752-54C8-4EC2-BBDE-3D3204F6D1C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uComponents.PropertyEditors", "uComponents.PropertyEditors\uComponents.PropertyEditors.csproj", "{19BE3807-1BB1-4136-89BB-8A9B46081E6F}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = uComponents.vsmdi
@@ -119,6 +121,10 @@ Global
 		{9DF10752-54C8-4EC2-BBDE-3D3204F6D1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DF10752-54C8-4EC2-BBDE-3D3204F6D1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DF10752-54C8-4EC2-BBDE-3D3204F6D1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19BE3807-1BB1-4136-89BB-8A9B46081E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19BE3807-1BB1-4136-89BB-8A9B46081E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19BE3807-1BB1-4136-89BB-8A9B46081E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19BE3807-1BB1-4136-89BB-8A9B46081E6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
