@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Xml.Linq;
+using uComponents.Core;
 using umbraco.DataLayer;
 using Umbraco.Web.BaseRest;
 
@@ -12,12 +13,12 @@ namespace uComponents.DataTypes.SqlAutoComplete
 	/// <summary>
 	/// Use the data-type guid as the start of the /base request
 	/// </summary>
-	[RestExtension(DataTypeConstants.SqlAutoCompleteId)]
+	[RestExtension(Constants.DataTypes.SqlAutoCompleteId)]
 	public class SqlAutoCompleteBase
 	{
 		private static SqlAutoCompleteOptions GetOptions(int datatypeDefinitionId)
 		{
-			return (SqlAutoCompleteOptions)HttpContext.Current.Cache[string.Concat(DataTypeConstants.SqlAutoCompleteId, "_options_", datatypeDefinitionId)];
+			return (SqlAutoCompleteOptions)HttpContext.Current.Cache[string.Concat(Constants.DataTypes.SqlAutoCompleteId, "_options_", datatypeDefinitionId)];
 		}
 
 		/// <summary>

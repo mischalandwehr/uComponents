@@ -21,7 +21,7 @@ namespace uComponents.PropertyEditors.ValueConverters.ImagePoint
 		/// <returns></returns>
 		public bool IsConverterFor(Guid propertyEditorId, string docTypeAlias, string propertyTypeAlias)
 		{
-			return Guid.Parse(DataTypeConstants.ImagePointId).Equals(propertyEditorId);
+			return Guid.Parse(uComponents.Core.Constants.DataTypes.ImagePointId).Equals(propertyEditorId);
 		}
 
 		/// <summary>

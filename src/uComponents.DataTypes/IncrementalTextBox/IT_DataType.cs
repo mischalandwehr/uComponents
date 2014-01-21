@@ -1,5 +1,5 @@
 ﻿using System;
-
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -53,7 +53,7 @@ namespace uComponents.DataTypes.IncrementalTextBox
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.IncrementalTextBoxId);
+				return new Guid(Constants.DataTypes.IncrementalTextBoxId);
 			}
 		}
 

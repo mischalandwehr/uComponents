@@ -29,7 +29,7 @@ namespace uComponents.DataTypes.Similarity
         {
             get
             {
-                return new Guid(DataTypeConstants.SimilarityId);
+                return new Guid(Constants.DataTypes.SimilarityId);
             }
         }
 

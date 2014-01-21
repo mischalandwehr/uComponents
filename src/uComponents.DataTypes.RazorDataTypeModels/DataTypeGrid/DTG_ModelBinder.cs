@@ -1,17 +1,15 @@
 ﻿namespace uComponents.DataTypes.RazorDataTypeModels.DataTypeGrid
 {
-    using System.Linq;
-
-    using uComponents.DataTypes.DataTypeGrid.Model;
-
-    using umbraco.MacroEngines;
-
-    using DynamicXml = Umbraco.Core.Dynamics.DynamicXml;
+	using System.Linq;
+	using uComponents.Core;
+	using uComponents.DataTypes.DataTypeGrid.Model;
+	using umbraco.MacroEngines;
+	using DynamicXml = Umbraco.Core.Dynamics.DynamicXml;
 
     /// <summary>
     /// Model binder for the DataTypeGrid data-type.
     /// </summary>
-    [RazorDataTypeModel(DataTypeConstants.DataTypeGridId)]
+    [RazorDataTypeModel(Constants.DataTypes.DataTypeGridId)]
     public class DtgModelBinder : IRazorDataTypeModel
     {
         /// <summary>

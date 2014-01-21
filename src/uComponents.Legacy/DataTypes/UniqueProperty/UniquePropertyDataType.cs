@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 
 namespace uComponents.DataTypes.UniqueProperty
@@ -26,7 +27,7 @@ namespace uComponents.DataTypes.UniqueProperty
         {
             get
             {
-                return new Guid(DataTypeConstants.UniquePropertyId);
+                return new Guid(Constants.DataTypes.UniquePropertyId);
             }
         }
 

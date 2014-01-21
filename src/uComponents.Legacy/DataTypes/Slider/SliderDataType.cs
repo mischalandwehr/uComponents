@@ -51,7 +51,7 @@ namespace uComponents.DataTypes.Slider
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.SliderId);
+				return new Guid(Constants.DataTypes.SliderId);
 			}
 		}
 

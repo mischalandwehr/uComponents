@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -43,7 +44,7 @@ namespace uComponents.DataTypes.FilePicker
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.FilePickerId);
+				return new Guid(Constants.DataTypes.FilePickerId);
 			}
 		}
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.editorControls;
 using umbraco.interfaces;
 
@@ -52,7 +53,7 @@ namespace uComponents.DataTypes.XPathTemplatableList
         {
             get
             {
-                return new Guid(DataTypeConstants.XPathTemplatableListId);
+                return new Guid(Constants.DataTypes.XPathTemplatableListId);
             }
         }
 

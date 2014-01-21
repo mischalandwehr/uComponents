@@ -69,7 +69,7 @@ namespace uComponents.DataTypes.XPathCheckBoxList
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.XPathCheckBoxListId);
+				return new Guid(Constants.DataTypes.XPathCheckBoxListId);
 			}
 		}
 

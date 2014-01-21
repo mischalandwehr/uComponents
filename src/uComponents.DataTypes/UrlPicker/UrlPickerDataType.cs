@@ -3,6 +3,7 @@ using uComponents.DataTypes.UrlPicker.Dto;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 using umbraco.editorControls;
+using uComponents.Core;
 
 namespace uComponents.DataTypes.UrlPicker
 {
@@ -47,7 +48,7 @@ namespace uComponents.DataTypes.UrlPicker
         {
             get
             {
-                return new Guid(DataTypeConstants.UrlPickerId);
+                return new Guid(Constants.DataTypes.UrlPickerId);
             }
         }
 

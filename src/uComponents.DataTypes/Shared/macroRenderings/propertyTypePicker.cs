@@ -14,7 +14,7 @@ namespace uComponents.DataTypes.Shared.macroRenderings
 	/// This class was copied from the Umbraco v6.2.0 code-base.
 	/// It has been marked as `internal sealed` so that it is only used for the uComponents data-types.
 	/// </remarks>
-	[Obsolete("This control has been deprecated from the Umbraco core v7+. It has only been referenced here for backwards-compatibility.")]
+	[Obsolete("This control has been deprecated from the Umbraco core v7+. It has only been referenced here for backwards-compatibility.", false)]
 	internal sealed class propertyTypePicker : ListBox, IMacroGuiRendering
 	{
 		string _value = "";

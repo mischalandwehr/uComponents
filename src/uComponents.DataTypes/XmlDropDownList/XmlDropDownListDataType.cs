@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Web.UI.WebControls;
+using uComponents.Core;
 using umbraco;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
@@ -44,7 +45,7 @@ namespace uComponents.DataTypes.XmlDropDownList
 		/// <value>The id of the data-type.</value>
 		public override Guid Id
 		{
-			get { return new Guid(DataTypeConstants.XmlDropDownListId); }
+			get { return new Guid(Constants.DataTypes.XmlDropDownListId); }
 		}
 
 		/// <summary>

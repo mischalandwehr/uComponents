@@ -45,7 +45,7 @@ namespace uComponents.DataTypes.DataTypeGrid
         {
             get
             {
-                return new Guid(DataTypeConstants.DataTypeGridId);
+                return new Guid(uComponents.Core.Constants.DataTypes.DataTypeGridId);
             }
         }
 

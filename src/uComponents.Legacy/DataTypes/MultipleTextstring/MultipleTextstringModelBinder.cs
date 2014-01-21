@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Xml;
+using uComponents.Core;
 using umbraco.MacroEngines;
 
 namespace uComponents.DataTypes.MultipleTextstring
@@ -7,7 +8,7 @@ namespace uComponents.DataTypes.MultipleTextstring
 	/// <summary>
 	/// Model binder for the Multiple Textstring data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.MultipleTextstringId)]
+	[RazorDataTypeModel(Constants.DataTypes.MultipleTextstringId)]
 	public class MultipleTextstringModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

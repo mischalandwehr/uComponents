@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Xml;
+using uComponents.Core;
 using umbraco.MacroEngines;
 
 namespace uComponents.DataTypes.RazorDataTypeModels.TextstringArray
@@ -7,7 +8,7 @@ namespace uComponents.DataTypes.RazorDataTypeModels.TextstringArray
 	/// <summary>
 	/// Model binder for the TextstringArray data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.TextstringArrayId)]
+	[RazorDataTypeModel(Constants.DataTypes.TextstringArrayId)]
 	public class TextstringArrayModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

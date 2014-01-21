@@ -8,7 +8,7 @@ namespace uComponents.DataTypes.XPathCheckBoxList
 	/// <summary>
 	/// Model binder for the XPathCheckBoxList data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.XPathCheckBoxListId)]
+	[RazorDataTypeModel(Constants.DataTypes.XPathCheckBoxListId)]
 	public class XPathCheckBoxListModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

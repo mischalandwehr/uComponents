@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.editorControls;
 using umbraco.interfaces;
 
@@ -66,7 +67,7 @@ namespace uComponents.DataTypes.SqlCheckBoxList
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.SqlCheckBoxListId);
+				return new Guid(Constants.DataTypes.SqlCheckBoxListId);
 			}
 		}
 

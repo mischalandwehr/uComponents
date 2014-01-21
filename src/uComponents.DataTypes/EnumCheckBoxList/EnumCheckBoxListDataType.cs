@@ -2,6 +2,7 @@
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 using umbraco.editorControls;
+using uComponents.Core;
 
 namespace uComponents.DataTypes.EnumCheckBoxList
 {
@@ -45,7 +46,7 @@ namespace uComponents.DataTypes.EnumCheckBoxList
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.EnumCheckBoxListId);
+				return new Guid(Constants.DataTypes.EnumCheckBoxListId);
 			}
 		}
 

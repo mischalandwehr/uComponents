@@ -7,7 +7,7 @@ namespace uComponents.DataTypes.RazorDataTypeModels.CountryPicker
 	/// <summary>
 	/// Model binder for the Country Picker data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.CountryPickerId)]
+	[RazorDataTypeModel(Constants.DataTypes.CountryPickerId)]
 	public class CountryPickerModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

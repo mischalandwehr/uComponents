@@ -4,7 +4,8 @@ using umbraco.interfaces;
 
 namespace umbraco.editorControls.XPathRadioButtonList
 {
-    using uComponents.DataTypes;
+	using uComponents.Core;
+	using uComponents.DataTypes;
 
     /// <summary>
     /// 
@@ -46,7 +47,7 @@ namespace umbraco.editorControls.XPathRadioButtonList
         {
             get
             {
-                return new Guid(DataTypeConstants.XPathRadioButtonListId);
+                return new Guid(Constants.DataTypes.XPathRadioButtonListId);
             }
         }
 

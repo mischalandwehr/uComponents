@@ -8,6 +8,7 @@ using System.Xml.Linq;
 using System.Xml;
 using System.Web;
 using umbraco.editorControls;
+using uComponents.Core;
 
 namespace uComponents.DataTypes.MultiNodeTreePicker
 {
@@ -49,7 +50,7 @@ namespace uComponents.DataTypes.MultiNodeTreePicker
         {
             get
             {
-                return new Guid(DataTypeConstants.MultiNodeTreePickerId);
+                return new Guid(Constants.DataTypes.MultiNodeTreePickerId);
             }
         }
 

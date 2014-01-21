@@ -19,7 +19,7 @@ namespace uComponents.PropertyEditors.ValueConverters.CountryPicker
 		/// <returns></returns>
 		public bool IsConverterFor(Guid propertyEditorId, string docTypeAlias, string propertyTypeAlias)
 		{
-			return Guid.Parse(DataTypeConstants.CountryPickerId).Equals(propertyEditorId);
+			return Guid.Parse(uComponents.Core.Constants.DataTypes.CountryPickerId).Equals(propertyEditorId);
 		}
 
 		/// <summary>

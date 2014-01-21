@@ -119,7 +119,7 @@ namespace uComponents.DataTypes.SqlAutoComplete
             HtmlGenericControl ul = new HtmlGenericControl("ul");
            
             div.Attributes.Add("class", "sql-auto-complete");
-            div.Attributes.Add("data-sql-autocomplete-id", DataTypeConstants.SqlAutoCompleteId); 
+            div.Attributes.Add("data-sql-autocomplete-id", Constants.DataTypes.SqlAutoCompleteId); 
             div.Attributes.Add("data-datatype-definition-id", this.DataTypeDefinitionId.ToString());
             div.Attributes.Add("data-current-id", uQuery.GetIdFromQueryString());
             div.Attributes.Add("data-min-length", this.options.MinLength.ToString());
@@ -166,7 +166,7 @@ namespace uComponents.DataTypes.SqlAutoComplete
             }
 
             // put the options obj into cache so that the /base method can request it (where the sql statment is being used)
-            HttpContext.Current.Cache[string.Concat(DataTypeConstants.SqlAutoCompleteId, "_options_", this.DataTypeDefinitionId)] = this.options;
+            HttpContext.Current.Cache[string.Concat(Constants.DataTypes.SqlAutoCompleteId, "_options_", this.DataTypeDefinitionId)] = this.options;
         }
 
         /// <summary>

@@ -1,5 +1,5 @@
 ﻿using System;
-
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -45,7 +45,7 @@ namespace uComponents.DataTypes.AutoComplete
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.AutoCompleteId);
+				return new Guid(Constants.DataTypes.AutoCompleteId);
 			}
 		}
 

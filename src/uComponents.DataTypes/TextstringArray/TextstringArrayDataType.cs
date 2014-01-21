@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -47,7 +48,7 @@ namespace uComponents.DataTypes.TextstringArray
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.TextstringArrayId);
+				return new Guid(Constants.DataTypes.TextstringArrayId);
 			}
 		}
 

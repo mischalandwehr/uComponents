@@ -6,6 +6,7 @@ using umbraco;
 using System.Configuration;
 using uComponents.DataTypes.Shared.Extensions;
 using System.Web;
+using uComponents.Core;
 
 namespace uComponents.DataTypes.SqlAutoComplete
 {
@@ -221,7 +222,7 @@ namespace uComponents.DataTypes.SqlAutoComplete
             if (this.Page.IsValid)
             {
                 // wipe any associated caches incase they refer to old settings
-                HttpContext.Current.Cache.Remove(string.Concat(DataTypeConstants.SqlAutoCompleteId, "_options_", this.DataType.DataTypeDefinitionId));
+                HttpContext.Current.Cache.Remove(string.Concat(Constants.DataTypes.SqlAutoCompleteId, "_options_", this.DataType.DataTypeDefinitionId));
 
                 this.Options.Sql = this.sqlTextBox.Text;
                 this.Options.ConnectionStringName = this.connectionStringDropDownList.SelectedValue;

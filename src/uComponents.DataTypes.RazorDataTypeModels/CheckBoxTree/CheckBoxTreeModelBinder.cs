@@ -9,7 +9,7 @@ namespace uComponents.DataTypes.RazorDataTypeModels.CheckBoxTree
 	/// <summary>
 	/// Model binder for the CheckBoxTree data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.CheckBoxTreeId)]
+	[RazorDataTypeModel(Constants.DataTypes.CheckBoxTreeId)]
 	public class CheckBoxTreeModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

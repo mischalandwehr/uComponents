@@ -11,7 +11,7 @@ namespace uComponents.DataTypes.RazorDataTypeModels.SqlAutoComplete
 	/// <summary>
 	/// Model binder for the SqlAutoComplete data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.SqlAutoCompleteId)]
+	[RazorDataTypeModel(Constants.DataTypes.SqlAutoCompleteId)]
 	public class SqlAutoCompleteModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

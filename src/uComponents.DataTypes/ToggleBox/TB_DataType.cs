@@ -1,6 +1,5 @@
 ﻿using System;
-
-
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -45,7 +44,7 @@ namespace uComponents.DataTypes.ToggleBox
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.ToggleBoxId);
+				return new Guid(Constants.DataTypes.ToggleBoxId);
 			}
 		}
 

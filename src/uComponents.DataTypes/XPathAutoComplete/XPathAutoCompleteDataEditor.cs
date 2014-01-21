@@ -131,7 +131,7 @@ namespace uComponents.DataTypes.XPathAutoComplete
             HtmlGenericControl ul = new HtmlGenericControl("ul");
 
             div.Attributes.Add("class", "xpath-auto-complete");
-            div.Attributes.Add("data-xpath-autocomplete-id", DataTypeConstants.XPathAutoCompleteId);
+            div.Attributes.Add("data-xpath-autocomplete-id", Constants.DataTypes.XPathAutoCompleteId);
             div.Attributes.Add("data-datatype-definition-id", this.DataTypeDefinitionId.ToString());
             div.Attributes.Add("data-current-id", uQuery.GetIdFromQueryString());
             div.Attributes.Add("data-type", this.options.Type);
@@ -179,7 +179,7 @@ namespace uComponents.DataTypes.XPathAutoComplete
             }
 
             // put the options obj into cache so that the /base method can request it (where the XPath query is being used)
-            HttpContext.Current.Cache[string.Concat(DataTypeConstants.XPathAutoCompleteId, "_options_", this.DataTypeDefinitionId)] = this.options;
+            HttpContext.Current.Cache[string.Concat(Constants.DataTypes.XPathAutoCompleteId, "_options_", this.DataTypeDefinitionId)] = this.options;
         }
 
         /// <summary>

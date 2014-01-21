@@ -21,7 +21,7 @@ namespace uComponents.PropertyEditors.ValueConverters.DataTypeGrid
 		/// <returns>True if this class can convert the specified property editor.</returns>
 		public bool IsConverterFor(Guid propertyEditorId, string docTypeAlias, string propertyTypeAlias)
 		{
-			return Guid.Parse(DataTypeConstants.DataTypeGridId).Equals(propertyEditorId);
+			return Guid.Parse(uComponents.Core.Constants.DataTypes.DataTypeGridId).Equals(propertyEditorId);
 		}
 
 		/// <summary>

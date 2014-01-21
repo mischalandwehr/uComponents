@@ -1,5 +1,5 @@
 ﻿using System;
-
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -43,7 +43,7 @@ namespace uComponents.DataTypes.CharLimit
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.CharLimitId);
+				return new Guid(Constants.DataTypes.CharLimitId);
 			}
 		}
 

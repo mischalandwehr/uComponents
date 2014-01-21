@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -25,7 +26,7 @@ namespace uComponents.DataTypes.SubTabs
         /// Gets the id.
         /// </summary>
         /// <value>The id.</value>
-        public override Guid Id { get { return new Guid(DataTypeConstants.SubTabs); } }
+        public override Guid Id { get { return new Guid(Constants.DataTypes.SubTabs); } }
 
         /// <summary>
         /// Lazy load the associated PreValueEditor instance,

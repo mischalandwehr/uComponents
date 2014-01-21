@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -49,7 +50,7 @@ namespace uComponents.DataTypes.RenderMacro
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.RenderMacroId);
+				return new Guid(Constants.DataTypes.RenderMacroId);
 			}
 		}
 

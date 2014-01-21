@@ -1,4 +1,5 @@
-﻿using umbraco;
+﻿using uComponents.Core;
+using umbraco;
 using umbraco.MacroEngines;
 using umbraco.MacroEngines.Library;
 
@@ -7,7 +8,7 @@ namespace uComponents.DataTypes.RazorDataTypeModels.Similarity
 	/// <summary>
 	/// Model binder for the Similarity data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.SimilarityId)]
+	[RazorDataTypeModel(Constants.DataTypes.SimilarityId)]
 	public class SimilarityModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

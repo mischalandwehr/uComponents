@@ -9,7 +9,7 @@ namespace uComponents.DataTypes.RazorDataTypeModels.MultipleDates
 	/// <summary>
 	/// Model binder for the Multiple Dates data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.MultipleDatesId)]
+	[RazorDataTypeModel(Constants.DataTypes.MultipleDatesId)]
 	public class MD_ModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

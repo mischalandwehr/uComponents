@@ -68,7 +68,7 @@ namespace uComponents.DataTypes.CheckBoxTree
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.CheckBoxTreeId);
+				return new Guid(Constants.DataTypes.CheckBoxTreeId);
 			}
 		}
 

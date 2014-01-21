@@ -7,7 +7,7 @@ namespace uComponents.DataTypes.RazorDataTypeModels.UrlPicker
 	/// <summary>
 	/// Model binder for the UrlPicker data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.UrlPickerId)]
+	[RazorDataTypeModel(Constants.DataTypes.UrlPickerId)]
 	public class UrlPickerModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

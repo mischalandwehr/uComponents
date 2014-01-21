@@ -6,6 +6,7 @@ using umbraco;
 using System.Configuration;
 using uComponents.DataTypes.Shared.Extensions;
 using System.Web;
+using uComponents.Core;
 
 namespace uComponents.DataTypes.XPathAutoComplete
 {
@@ -224,7 +225,7 @@ namespace uComponents.DataTypes.XPathAutoComplete
             if (this.Page.IsValid)
             {
                 // wipe cache incase settings have changed
-                HttpContext.Current.Cache.Remove(string.Concat(DataTypeConstants.XPathAutoCompleteId, "_options_", this.DataType.DataTypeDefinitionId));
+                HttpContext.Current.Cache.Remove(string.Concat(Constants.DataTypes.XPathAutoCompleteId, "_options_", this.DataType.DataTypeDefinitionId));
 
                 this.Options.Type = this.typeRadioButtonList.SelectedValue;
                 this.Options.XPath = this.xPathTextBox.Text;

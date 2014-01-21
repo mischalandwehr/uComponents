@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using uComponents.DataTypes.Shared.PrevalueEditors;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
@@ -56,7 +57,7 @@ namespace uComponents.DataTypes.ImageDropdown
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.ImageDropdownId);
+				return new Guid(Constants.DataTypes.ImageDropdownId);
 			}
 		}
 

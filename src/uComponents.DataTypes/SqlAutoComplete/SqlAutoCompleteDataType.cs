@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.editorControls;
 using umbraco.interfaces;
 
@@ -52,7 +53,7 @@ namespace uComponents.DataTypes.SqlAutoComplete
         {
             get
             {
-                return new Guid(DataTypeConstants.SqlAutoCompleteId);
+                return new Guid(Constants.DataTypes.SqlAutoCompleteId);
             }
         }
 

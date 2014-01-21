@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -27,7 +28,7 @@ namespace uComponents.DataTypes.Notes
         {
             get
             {
-                return new Guid(DataTypeConstants.NotesId);
+                return new Guid(Constants.DataTypes.NotesId);
             }
         }
 

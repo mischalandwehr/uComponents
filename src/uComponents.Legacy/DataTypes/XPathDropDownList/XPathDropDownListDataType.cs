@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Xml;
-
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -36,7 +36,7 @@ namespace uComponents.DataTypes.XPathDropDownList
 		/// Gets the id.
 		/// </summary>
 		/// <value>The id.</value>
-		public override Guid Id { get { return new Guid(DataTypeConstants.XPathDropDownListId); } }
+		public override Guid Id { get { return new Guid(Constants.DataTypes.XPathDropDownListId); } }
 
 		/// <summary>
 		/// Lazy load the associated PreValueEditor instance,

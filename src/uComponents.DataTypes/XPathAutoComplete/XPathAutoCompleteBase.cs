@@ -12,16 +12,17 @@ using System.Xml.Linq;
 namespace uComponents.DataTypes.XPathAutoComplete
 {
     using System.Xml;
+	using uComponents.Core;
 
     /// <summary>
     /// Use the data-type guid as the start of the /base request
     /// </summary>
-    [RestExtension(DataTypeConstants.XPathAutoCompleteId)]
+    [RestExtension(Constants.DataTypes.XPathAutoCompleteId)]
     public class XPathAutoCompleteBase
     {
         private static XPathAutoCompleteOptions GetOptions(int datatypeDefinitionId)
         {
-            return (XPathAutoCompleteOptions)HttpContext.Current.Cache[string.Concat(DataTypeConstants.XPathAutoCompleteId, "_options_", datatypeDefinitionId)];
+            return (XPathAutoCompleteOptions)HttpContext.Current.Cache[string.Concat(Constants.DataTypes.XPathAutoCompleteId, "_options_", datatypeDefinitionId)];
         }
         
         /// <summary>

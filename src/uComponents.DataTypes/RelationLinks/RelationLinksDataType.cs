@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -31,7 +32,7 @@ namespace uComponents.DataTypes.RelationLinks
         /// Gets the id.
         /// </summary>
         /// <value>The id.</value>
-        public override Guid Id { get { return new Guid(DataTypeConstants.RelationLinks); } }
+        public override Guid Id { get { return new Guid(Constants.DataTypes.RelationLinks); } }
 
 
         /// <summary>

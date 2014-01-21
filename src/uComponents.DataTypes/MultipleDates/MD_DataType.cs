@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using uComponents.DataTypes.Shared.PrevalueEditors;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
@@ -54,7 +55,7 @@ namespace uComponents.DataTypes.MultipleDates
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.MultipleDatesId);
+				return new Guid(Constants.DataTypes.MultipleDatesId);
 			}
 		}
 

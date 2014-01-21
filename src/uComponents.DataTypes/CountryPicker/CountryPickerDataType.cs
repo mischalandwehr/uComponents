@@ -1,5 +1,5 @@
 ﻿using System;
-
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -28,7 +28,7 @@ namespace uComponents.DataTypes.CountryPicker
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.CountryPickerId);
+				return new Guid(Constants.DataTypes.CountryPickerId);
 			}
 		}
 

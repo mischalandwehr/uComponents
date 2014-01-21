@@ -4,6 +4,7 @@ using System.Xml.Linq;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 using umbraco.editorControls;
+using uComponents.Core;
 
 namespace uComponents.DataTypes.TextImage
 {
@@ -146,7 +147,7 @@ namespace uComponents.DataTypes.TextImage
 		/// <value>The id.</value>
 		public override Guid Id
 		{
-			get { return new Guid(DataTypeConstants.TextImageId); }
+			get { return new Guid(Constants.DataTypes.TextImageId); }
 		}
 
 		/// <summary>

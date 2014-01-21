@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 
 namespace uComponents.DataTypes.RelatedLinksWithMedia
 {
@@ -56,7 +57,7 @@ namespace uComponents.DataTypes.RelatedLinksWithMedia
         /// <value>The id.</value>
         public override Guid Id
         {
-            get { return new Guid(DataTypeConstants.RelatedLinksWithMediaId); }
+            get { return new Guid(Constants.DataTypes.RelatedLinksWithMediaId); }
         }
 
         /// <summary>

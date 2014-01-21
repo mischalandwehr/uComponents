@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using uComponents.DataTypes.Shared.PrevalueEditors;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
@@ -56,7 +57,7 @@ namespace uComponents.DataTypes.RadiobuttonListWithImages
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.RadioButtonListWithImagesId);
+				return new Guid(Constants.DataTypes.RadioButtonListWithImagesId);
 			}
 		}
 

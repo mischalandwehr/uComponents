@@ -1,5 +1,5 @@
 ﻿using System;
-
+using uComponents.Core;
 using uComponents.DataTypes.Shared.PrevalueEditors;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
@@ -53,7 +53,7 @@ namespace uComponents.DataTypes.DropdownCheckList
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.DropdownCheckListId);
+				return new Guid(Constants.DataTypes.DropdownCheckListId);
 			}
 		}
 

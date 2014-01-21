@@ -25,7 +25,7 @@ namespace uComponents.PropertyEditors.ValueConverters.XPathAutoComplete
 		/// <returns></returns>
 		public bool IsConverterFor(Guid propertyEditorId, string docTypeAlias, string propertyTypeAlias)
 		{
-			return Guid.Parse(DataTypeConstants.XPathAutoCompleteId).Equals(propertyEditorId);
+			return Guid.Parse(uComponents.Core.Constants.DataTypes.XPathAutoCompleteId).Equals(propertyEditorId);
 		}
 
 		/// <summary>

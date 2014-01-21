@@ -20,7 +20,7 @@ namespace uComponents.PropertyEditors.ValueConverters.UrlPicker
 		/// <returns></returns>
 		public bool IsConverterFor(Guid propertyEditorId, string docTypeAlias, string propertyTypeAlias)
 		{
-			return Guid.Parse(DataTypeConstants.UrlPickerId).Equals(propertyEditorId);
+			return Guid.Parse(uComponents.Core.Constants.DataTypes.UrlPickerId).Equals(propertyEditorId);
 		}
 
 		/// <summary>

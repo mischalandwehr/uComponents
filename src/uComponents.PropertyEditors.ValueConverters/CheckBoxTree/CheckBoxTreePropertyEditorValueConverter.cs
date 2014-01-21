@@ -21,7 +21,7 @@ namespace uComponents.PropertyEditors.ValueConverters.CheckBoxTree
 		/// <returns></returns>
 		public bool IsConverterFor(Guid propertyEditorId, string docTypeAlias, string propertyTypeAlias)
 		{
-			return Guid.Parse(DataTypeConstants.CheckBoxTreeId).Equals(propertyEditorId);
+			return Guid.Parse(uComponents.Core.Constants.DataTypes.CheckBoxTreeId).Equals(propertyEditorId);
 		}
 
 		/// <summary>

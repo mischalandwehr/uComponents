@@ -63,7 +63,7 @@ namespace uComponents.DataTypes.MultiPickerRelations
 		/// <param name="e"></param>
 		private void AfterSave(Content sender, SaveEventArgs e)
 		{
-			var multiPickerRelationsId = new Guid(DataTypeConstants.MultiPickerRelationsId);
+			var multiPickerRelationsId = new Guid(uComponents.Core.Constants.DataTypes.MultiPickerRelationsId);
 
 			// For each MultiPickerRelations datatype
 			foreach (var multiPickerRelationsProperty in from property in sender.GenericProperties
@@ -195,7 +195,7 @@ namespace uComponents.DataTypes.MultiPickerRelations
 		/// <param name="e">The <see cref="umbraco.cms.businesslogic.DeleteEventArgs"/> instance containing the event data.</param>
 		private void BeforeDelete(Content sender, DeleteEventArgs e)
 		{
-			var multiPickerRelationsId = new Guid(DataTypeConstants.MultiPickerRelationsId);
+			var multiPickerRelationsId = new Guid(uComponents.Core.Constants.DataTypes.MultiPickerRelationsId);
 
 			// Clean up any relations
 

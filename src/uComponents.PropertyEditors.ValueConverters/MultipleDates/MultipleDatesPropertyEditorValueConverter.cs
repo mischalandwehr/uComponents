@@ -21,7 +21,7 @@ namespace uComponents.PropertyEditors.ValueConverters.MultipleDates
 		/// <returns></returns>
 		public bool IsConverterFor(Guid propertyEditorId, string docTypeAlias, string propertyTypeAlias)
 		{
-			return Guid.Parse(DataTypeConstants.MultipleDatesId).Equals(propertyEditorId);
+			return Guid.Parse(uComponents.Core.Constants.DataTypes.MultipleDatesId).Equals(propertyEditorId);
 		}
 
 		/// <summary>

@@ -25,7 +25,7 @@ namespace uComponents.PropertyEditors.ValueConverters.SqlAutoComplete
 		/// <returns></returns>
 		public bool IsConverterFor(Guid propertyEditorId, string docTypeAlias, string propertyTypeAlias)
 		{
-			return Guid.Parse(DataTypeConstants.SqlAutoCompleteId).Equals(propertyEditorId);
+			return Guid.Parse(uComponents.Core.Constants.DataTypes.SqlAutoCompleteId).Equals(propertyEditorId);
 		}
 
 		/// <summary>

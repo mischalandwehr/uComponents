@@ -21,7 +21,7 @@ namespace uComponents.PropertyEditors.ValueConverters.Similarity
 		/// <returns></returns>
 		public bool IsConverterFor(Guid propertyEditorId, string docTypeAlias, string propertyTypeAlias)
 		{
-			return Guid.Parse(DataTypeConstants.SimilarityId).Equals(propertyEditorId);
+			return Guid.Parse(uComponents.Core.Constants.DataTypes.SimilarityId).Equals(propertyEditorId);
 		}
 
 		/// <summary>

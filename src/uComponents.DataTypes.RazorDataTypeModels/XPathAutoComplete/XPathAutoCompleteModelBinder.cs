@@ -11,7 +11,7 @@ namespace uComponents.DataTypes.RazorDataTypeModels.XPathAutoComplete
 	/// <summary>
 	/// Model binder for the XPathAutoComplete data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.XPathAutoCompleteId)]
+	[RazorDataTypeModel(Constants.DataTypes.XPathAutoCompleteId)]
 	public class XPathAutoCompleteModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

@@ -7,7 +7,7 @@ using uComponents.DataTypes.ImagePoint;
 
 namespace uComponents.DataTypes.RazorDataTypeModels.ImagePoint
 {
-    [RazorDataTypeModel(DataTypeConstants.ImagePointId)]
+    [RazorDataTypeModel(Constants.DataTypes.ImagePointId)]
     public class ImagePointModelBinder : IRazorDataTypeModel
     {
         public bool Init(int CurrentNodeId, string PropertyData, out object instance)

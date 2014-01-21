@@ -8,7 +8,7 @@ namespace uComponents.DataTypes.MultiNodeTreePicker
 	/// <summary>
 	/// Model binder for the DataTypeGrid data-type.
 	/// </summary>
-	[RazorDataTypeModel(DataTypeConstants.MultiNodeTreePickerId)]
+	[RazorDataTypeModel(Constants.DataTypes.MultiNodeTreePickerId)]
 	public class MultiNodeTreePickerModelBinder : IRazorDataTypeModel
 	{
 		/// <summary>

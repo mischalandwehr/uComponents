@@ -1,4 +1,5 @@
 ﻿using System;
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -44,7 +45,7 @@ namespace uComponents.DataTypes.EnumDropDownList
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.EnumDropDownListId);
+				return new Guid(Constants.DataTypes.EnumDropDownListId);
 			}
 		}
 

@@ -1,5 +1,5 @@
 ﻿using System;
-
+using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.interfaces;
 
@@ -44,7 +44,7 @@ namespace uComponents.DataTypes.JsonDropdown
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.JsonDropdownId);
+				return new Guid(Constants.DataTypes.JsonDropdownId);
 			}
 		}
 

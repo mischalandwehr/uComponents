@@ -5,6 +5,7 @@ using umbraco.cms.businesslogic.datatype;
 using uComponents.DataTypes.Shared.PrevalueEditors;
 using umbraco.interfaces;
 using umbraco.editorControls;
+using uComponents.Core;
 
 namespace uComponents.DataTypes.MultipleTextstring
 {
@@ -51,7 +52,7 @@ namespace uComponents.DataTypes.MultipleTextstring
 		{
 			get
 			{
-				return new Guid(DataTypeConstants.MultipleTextstringId);
+				return new Guid(Constants.DataTypes.MultipleTextstringId);
 			}
 		}
 
