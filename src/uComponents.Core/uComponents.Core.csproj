@@ -282,6 +282,9 @@
     <Compile Include="Constants-MediaTypeNames.cs">
       <DependentUpon>Constants.cs</DependentUpon>
     </Compile>
+    <Compile Include="Constants-PropertyEditors.cs">
+      <DependentUpon>Constants.cs</DependentUpon>
+    </Compile>
     <Compile Include="Constants-Umbraco.cs">
       <DependentUpon>Constants.cs</DependentUpon>
     </Compile>
