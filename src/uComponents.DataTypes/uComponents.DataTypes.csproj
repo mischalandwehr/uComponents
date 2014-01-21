@@ -264,7 +264,6 @@
     <Compile Include="CountryPicker\CountryPickerDataType.cs" />
     <Compile Include="CountryPicker\CountryPickerModelBinder.cs" />
     <Compile Include="CountryPicker\CountryPickerPreValueEditor.cs" />
-    <Compile Include="DataTypeConstants.cs" />
     <Compile Include="DataTypeGrid\Configuration\DtgConfiguration.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
