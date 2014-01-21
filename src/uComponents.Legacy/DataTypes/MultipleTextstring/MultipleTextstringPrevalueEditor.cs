@@ -91,7 +91,7 @@ namespace uComponents.DataTypes.MultipleTextstring
 		{
 			base.OnInit(e);
 
-			this.RegisterEmbeddedClientResource(typeof(DataTypeConstants), Constants.PrevalueEditorCssResourcePath, ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource(typeof(DataTypeConstants), Constants.PrevalueEditorCssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
 		}
 
 		/// <summary>

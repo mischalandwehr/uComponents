@@ -218,7 +218,7 @@ namespace uComponents.DataTypes.RelationLinks
 		{
 			base.OnLoad(e);
 
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.RelationLinks.RelationLinks.js", ClientDependencyType.Javascript);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.RelationLinks.RelationLinks.js", ClientDependency.Core.ClientDependencyType.Javascript);
 		}
 
 		/// <summary>

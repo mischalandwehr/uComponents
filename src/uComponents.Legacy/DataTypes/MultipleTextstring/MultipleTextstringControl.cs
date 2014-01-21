@@ -100,8 +100,8 @@ namespace uComponents.DataTypes.MultipleTextstring
 			base.OnLoad(e);
 
 			// Adds the client dependencies.
-			this.RegisterEmbeddedClientResource(CssResourcePath, ClientDependencyType.Css);
-			this.RegisterEmbeddedClientResource(JavaScriptResourcePath, ClientDependencyType.Javascript);
+			this.RegisterEmbeddedClientResource(CssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource(JavaScriptResourcePath, ClientDependency.Core.ClientDependencyType.Javascript);
 		}
 
 		/// <summary>

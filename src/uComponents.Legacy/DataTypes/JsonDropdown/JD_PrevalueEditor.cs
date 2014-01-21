@@ -70,7 +70,7 @@ namespace uComponents.DataTypes.JsonDropdown
 			base.OnInit(e);
 			this.EnsureChildControls();
 
-			this.RegisterEmbeddedClientResource(typeof(DataTypeConstants), Constants.PrevalueEditorCssResourcePath, ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource(typeof(DataTypeConstants), Constants.PrevalueEditorCssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
 		}
 
 		/// <summary>

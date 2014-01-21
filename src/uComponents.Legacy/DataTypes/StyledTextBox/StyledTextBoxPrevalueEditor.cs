@@ -134,7 +134,7 @@ namespace uComponents.DataTypes.StyledTextBox
             this.EnsureChildControls();
 
             // Adds the client dependencies.
-            this.RegisterEmbeddedClientResource(typeof(DataTypeConstants), Constants.PrevalueEditorCssResourcePath, ClientDependencyType.Css);
+            this.RegisterEmbeddedClientResource(typeof(DataTypeConstants), Constants.PrevalueEditorCssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
         }
 
         /// <summary>

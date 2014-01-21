@@ -79,8 +79,8 @@ namespace uComponents.DataTypes.DropdownCheckList
 			base.OnLoad(e);
 
 			// get the urls for the embedded resources
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.DropdownCheckList.Styles.uiDropdownchecklist.css", ClientDependencyType.Css);
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.DropdownCheckList.Scripts.ui.dropdownchecklist.js", ClientDependencyType.Javascript);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.DropdownCheckList.Styles.uiDropdownchecklist.css", ClientDependency.Core.ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.DropdownCheckList.Scripts.ui.dropdownchecklist.js", ClientDependency.Core.ClientDependencyType.Javascript);
 		}
 
 		/// <summary>

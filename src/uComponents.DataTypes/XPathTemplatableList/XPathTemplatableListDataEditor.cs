@@ -350,8 +350,8 @@ namespace uComponents.DataTypes.XPathTemplatableList
             }
 
             // add datatype css / js
-            this.RegisterEmbeddedClientResource("uComponents.DataTypes.XPathTemplatableList.XPathTemplatableList.css", ClientDependencyType.Css);
-            this.RegisterEmbeddedClientResource("uComponents.DataTypes.XPathTemplatableList.XPathTemplatableList.js", ClientDependencyType.Javascript);
+            this.RegisterEmbeddedClientResource("uComponents.DataTypes.XPathTemplatableList.XPathTemplatableList.css", ClientDependency.Core.ClientDependencyType.Css);
+            this.RegisterEmbeddedClientResource("uComponents.DataTypes.XPathTemplatableList.XPathTemplatableList.js", ClientDependency.Core.ClientDependencyType.Javascript);
 
             // if selecting a js file, it'll read in the contents of that file server side, and pass that string as a callback to the datatype init function
             string customCallbackScript = null;

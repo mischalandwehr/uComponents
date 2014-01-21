@@ -6,7 +6,7 @@ using uComponents.DataTypes.Shared.Extensions;
 using uComponents.DataTypes.Shared.PrevalueEditors;
 using umbraco.cms.businesslogic.datatype;
 using umbraco.cms.businesslogic.relation;
-using umbraco.macroRenderings;
+using uComponents.DataTypes.Shared.macroRenderings;
 using umbraco.editorControls;
 
 namespace uComponents.DataTypes.MultiPickerRelations

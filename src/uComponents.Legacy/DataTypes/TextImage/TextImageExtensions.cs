@@ -25,7 +25,7 @@ namespace uComponents.DataTypes.TextImage
         /// 
         /// </summary>
         /// <code>
-        ///     control.AddResourceToClientDependency(ColorpickerJs, ClientDependencyType.Javascript);
+        ///     control.AddResourceToClientDependency(ColorpickerJs, ClientDependency.Core.ClientDependencyType.Javascript);
         /// </code>
         /// <remarks>
         /// Don't forget to add web resources:
@@ -47,8 +47,8 @@ namespace uComponents.DataTypes.TextImage
         /// <param name="control">The CTL.</param>
         public static void AddJsTextImageClientDependencies(this Control control)
         {
-            control.RegisterEmbeddedClientResource(Constants.PrevalueEditorCssResourcePath, ClientDependencyType.Css);
-            control.RegisterEmbeddedClientResource(typeof(uComponents.DataTypes.DataTypeConstants), ColorpickerJs, ClientDependencyType.Javascript);
+            control.RegisterEmbeddedClientResource(Constants.PrevalueEditorCssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
+            control.RegisterEmbeddedClientResource(typeof(uComponents.DataTypes.DataTypeConstants), ColorpickerJs, ClientDependency.Core.ClientDependencyType.Javascript);
         }
     }
 }

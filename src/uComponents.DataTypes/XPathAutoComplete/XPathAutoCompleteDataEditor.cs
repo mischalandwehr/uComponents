@@ -161,8 +161,8 @@ namespace uComponents.DataTypes.XPathAutoComplete
             base.OnLoad(e);
             this.EnsureChildControls();
 
-            this.RegisterEmbeddedClientResource("uComponents.DataTypes.XPathAutoComplete.XPathAutoComplete.css", ClientDependencyType.Css);
-            this.RegisterEmbeddedClientResource("uComponents.DataTypes.XPathAutoComplete.XPathAutoComplete.js", ClientDependencyType.Javascript);
+            this.RegisterEmbeddedClientResource("uComponents.DataTypes.XPathAutoComplete.XPathAutoComplete.css", ClientDependency.Core.ClientDependencyType.Css);
+            this.RegisterEmbeddedClientResource("uComponents.DataTypes.XPathAutoComplete.XPathAutoComplete.js", ClientDependency.Core.ClientDependencyType.Javascript);
 
             string startupScript = @"
                 <script language='javascript' type='text/javascript'>

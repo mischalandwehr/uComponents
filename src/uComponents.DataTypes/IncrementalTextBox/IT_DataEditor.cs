@@ -71,8 +71,8 @@ namespace uComponents.DataTypes.IncrementalTextBox
             base.OnLoad(e);
 
 			// get the urls for the embedded resources
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.IncrementalTextBox.Scripts.jquery.increment.js", ClientDependencyType.Javascript);
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.IncrementalTextBox.Styles.IncrementalTextBox.css", ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.IncrementalTextBox.Scripts.jquery.increment.js", ClientDependency.Core.ClientDependencyType.Javascript);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.IncrementalTextBox.Styles.IncrementalTextBox.css", ClientDependency.Core.ClientDependencyType.Css);
         }
 
 		/// <summary>

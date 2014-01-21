@@ -66,7 +66,7 @@ namespace uComponents.DataTypes.Shared.PrevalueEditors
 			this.EnsureChildControls();
 
 			// Adds the client dependencies.
-			this.RegisterEmbeddedClientResource(typeof(AbstractPrevalueEditor), Constants.PrevalueEditorCssResourcePath, ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource(typeof(AbstractPrevalueEditor), Constants.PrevalueEditorCssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
 		}
 
 		/// <summary>

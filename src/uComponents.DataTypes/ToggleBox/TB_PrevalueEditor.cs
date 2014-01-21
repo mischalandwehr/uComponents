@@ -88,7 +88,7 @@ namespace uComponents.DataTypes.ToggleBox
 			base.OnInit(e);
 			this.EnsureChildControls();
 
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.mColorPicker.js", ClientDependencyType.Javascript);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.mColorPicker.js", ClientDependency.Core.ClientDependencyType.Javascript);
 		}
 
 		/// <summary>

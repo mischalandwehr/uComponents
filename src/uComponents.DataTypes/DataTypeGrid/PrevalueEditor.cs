@@ -229,13 +229,13 @@ namespace uComponents.DataTypes.DataTypeGrid
             this.EnsureChildControls();
 
             // Adds the client dependencies.
-            this.RegisterEmbeddedClientResource(Core.Constants.PrevalueEditorCssResourcePath, ClientDependencyType.Css);
+            this.RegisterEmbeddedClientResource(Core.Constants.PrevalueEditorCssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
             this.RegisterEmbeddedClientResource(
-                "uComponents.DataTypes.Shared.Resources.Scripts.json2.js", ClientDependencyType.Javascript);
+                "uComponents.DataTypes.Shared.Resources.Scripts.json2.js", ClientDependency.Core.ClientDependencyType.Javascript);
             this.RegisterEmbeddedClientResource(
-                "uComponents.DataTypes.DataTypeGrid.Css.DTG_PrevalueEditor.css", ClientDependencyType.Css);
+                "uComponents.DataTypes.DataTypeGrid.Css.DTG_PrevalueEditor.css", ClientDependency.Core.ClientDependencyType.Css);
             this.RegisterEmbeddedClientResource(
-                "uComponents.DataTypes.DataTypeGrid.Scripts.DTG_PrevalueEditor.js", ClientDependencyType.Javascript);
+                "uComponents.DataTypes.DataTypeGrid.Scripts.DTG_PrevalueEditor.js", ClientDependency.Core.ClientDependencyType.Javascript);
         }
 
         /// <summary>

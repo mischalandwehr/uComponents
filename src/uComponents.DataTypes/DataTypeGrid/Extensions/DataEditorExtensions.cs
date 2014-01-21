@@ -34,7 +34,7 @@ namespace uComponents.DataTypes.DataTypeGrid.Extensions
         /// <param name="ctl">The grid control.</param>
         public static void AddCssDtgClientDependencies(this DataEditor ctl)
         {
-            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.DataTypeGrid.Css.DTG_DataEditor.css", ClientDependencyType.Css);
+            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.DataTypeGrid.Css.DTG_DataEditor.css", ClientDependency.Core.ClientDependencyType.Css);
         }
 
         /// <summary>
@@ -43,10 +43,10 @@ namespace uComponents.DataTypes.DataTypeGrid.Extensions
         /// <param name="ctl">The grid control.</param>
         public static void AddJsDtgClientDependencies(this DataEditor ctl)
         {
-            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.DataTypeGrid.Scripts.jquery.dataTables.min.js", ClientDependencyType.Javascript);
-            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.jquery.ucomponents.js", ClientDependencyType.Javascript);
-            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.jquery.ucomponents.dictionary.js", ClientDependencyType.Javascript);
-            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.DataTypeGrid.Scripts.DTG_DataEditor.js", ClientDependencyType.Javascript);
+            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.DataTypeGrid.Scripts.jquery.dataTables.min.js", ClientDependency.Core.ClientDependencyType.Javascript);
+            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.jquery.ucomponents.js", ClientDependency.Core.ClientDependencyType.Javascript);
+            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.jquery.ucomponents.dictionary.js", ClientDependency.Core.ClientDependencyType.Javascript);
+            ctl.RegisterEmbeddedClientResource("uComponents.DataTypes.DataTypeGrid.Scripts.DTG_DataEditor.js", ClientDependency.Core.ClientDependencyType.Javascript);
         }
 
         /// <summary>

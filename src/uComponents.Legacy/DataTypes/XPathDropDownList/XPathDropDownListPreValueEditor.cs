@@ -104,7 +104,7 @@ namespace uComponents.DataTypes.XPathDropDownList
 		{
 			base.OnInit(e);
 
-			this.RegisterEmbeddedClientResource(typeof(DataTypeConstants), Constants.PrevalueEditorCssResourcePath, ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource(typeof(DataTypeConstants), Constants.PrevalueEditorCssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
 		}
 
 		/// <summary>

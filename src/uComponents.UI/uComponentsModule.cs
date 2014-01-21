@@ -142,7 +142,7 @@ namespace uComponents.UI
 						page.RegisterEmbeddedClientResource(
 							set.GetType(),
 							reg.ResourceName,
-							reg.IsScript ? ClientDependencyType.Javascript : ClientDependencyType.Css);
+							reg.IsScript ? ClientDependency.Core.ClientDependencyType.Javascript : ClientDependency.Core.ClientDependencyType.Css);
 
 						//loader.RegisterDependency(userPriority++, resourceUrl,
 						//    reg.IsScript ? ClientDependencyType.Javascript : ClientDependencyType.Css);

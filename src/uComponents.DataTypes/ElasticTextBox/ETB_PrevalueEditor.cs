@@ -115,7 +115,7 @@ namespace uComponents.DataTypes.ElasticTextBox
 			this.EnsureChildControls();
 
 			// Adds the client dependencies.
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.ElasticTextBox.Scripts.jquery.elastic.js", ClientDependencyType.Javascript);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.ElasticTextBox.Scripts.jquery.elastic.js", ClientDependency.Core.ClientDependencyType.Javascript);
 		}
 
 		/// <summary>

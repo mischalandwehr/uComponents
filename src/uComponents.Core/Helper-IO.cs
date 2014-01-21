@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Web;
 using System.Web.Hosting;
 using umbraco;
-using umbraco.IO;
+using Umbraco.Core.IO;
 
 namespace uComponents.Core
 {

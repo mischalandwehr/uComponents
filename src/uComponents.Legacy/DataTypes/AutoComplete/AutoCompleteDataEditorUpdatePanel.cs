@@ -265,7 +265,7 @@ namespace uComponents.DataTypes.AutoComplete
             //string autocompleteCss = "<link rel='stylesheet' href='/umbraco/plugins/AutoComplete/autocomplete.css'/>";
             //this.Page.ClientScript.RegisterClientScriptBlock(autocompleteCss.GetType(), "autocompleteCss", autocompleteCss);
             this.RegisterEmbeddedClientResource(
-                "uComponents.Legacy.DataTypes.AutoComplete.Styles.autocomplete.css", ClientDependencyType.Css);
+                "uComponents.Legacy.DataTypes.AutoComplete.Styles.autocomplete.css", ClientDependency.Core.ClientDependencyType.Css);
         }
 
         /// <summary>

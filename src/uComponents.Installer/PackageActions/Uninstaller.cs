@@ -271,33 +271,36 @@ namespace uComponents.Installer.PackageActions
 		/// <returns></returns>
 		private bool UpdateXsltExtensionsConfig()
 		{
-			var path = IOHelper.MapPath(SystemFiles.XsltextensionsConfig);
-			var config = new XmlDocument() { PreserveWhitespace = true };
-			config.Load(path);
-
-			if (config != null)
+			var path = IOHelper.MapPath(SystemDirectories.Config + "/xsltExtensions.config");
+			if (File.Exists(path))
 			{
-				var legacyNamespace = "uComponents.Core";
-				var nodes = config.SelectNodes(string.Format("//ext[@assembly = '{0}']", legacyNamespace));
-				if (nodes != null && nodes.Count > 0)
+				var config = new XmlDocument() { PreserveWhitespace = true };
+				config.Load(path);
+
+				if (config != null)
 				{
-					var newNamespace = "uComponents.XsltExtensions";
-					foreach (XmlNode node in nodes)
+					var legacyNamespace = "uComponents.Core";
+					var nodes = config.SelectNodes(string.Format("//ext[@assembly = '{0}']", legacyNamespace));
+					if (nodes != null && nodes.Count > 0)
 					{
-						var assembly = node.Attributes.GetNamedItem("assembly");
-						if (assembly != null)
+						var newNamespace = "uComponents.XsltExtensions";
+						foreach (XmlNode node in nodes)
 						{
-							assembly.Value = newNamespace;
+							var assembly = node.Attributes.GetNamedItem("assembly");
+							if (assembly != null)
+							{
+								assembly.Value = newNamespace;
+							}
+
+							var type = node.Attributes.GetNamedItem("type");
+							if (type != null)
+							{
+								type.Value = type.Value.Replace("uComponents.Core.XsltExtensions", newNamespace);
+							}
 						}
 
-						var type = node.Attributes.GetNamedItem("type");
-						if (type != null)
-						{
-							type.Value = type.Value.Replace("uComponents.Core.XsltExtensions", newNamespace);
-						}
+						config.Save(path);
 					}
-
-					config.Save(path);
 				}
 			}
 

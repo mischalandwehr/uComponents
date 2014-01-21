@@ -1,4 +1,5 @@
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Web.UI;
 using uComponents.Core;
@@ -18,6 +19,10 @@ using uComponents.Core;
 [assembly: AssemblyCopyright("Copyright \xa9 The Umbraco Community 2014")]
 [assembly: AssemblyTrademark("The Umbraco Community")]
 [assembly: AssemblyCulture("")]
+
+// expose internal classes/methods
+[assembly: InternalsVisibleTo("uComponents.DataTypes.RazorDataTypeModels")]
+[assembly: InternalsVisibleTo("uComponents.Legacy")]
 
 // shared embedded resources
 [assembly: WebResource(Constants.PrevalueEditorCssResourcePath, Constants.MediaTypeNames.Text.Css, PerformSubstitution = true)]

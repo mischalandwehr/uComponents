@@ -199,7 +199,7 @@ namespace uComponents.DataTypes.UrlPicker
             base.OnInit(e);
 
             this.EnsureChildControls();
-            this.RegisterEmbeddedClientResource(Constants.PrevalueEditorCssResourcePath, ClientDependencyType.Css);
+            this.RegisterEmbeddedClientResource(Constants.PrevalueEditorCssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
         }
 
         /// <summary>

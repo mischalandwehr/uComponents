@@ -36,7 +36,7 @@ namespace uComponents.DataTypes.MultiNodeTreePicker
 		/// <param name="ctl"></param>
 		public static void AddCssMNTPClientDependencies(this Control ctl)
 		{
-			ctl.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.MultiNodeTreePicker.MultiNodePickerStyles.css", ClientDependencyType.Css);
+			ctl.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.MultiNodeTreePicker.MultiNodePickerStyles.css", ClientDependency.Core.ClientDependencyType.Css);
 		}
 
 		/// <summary>
@@ -45,7 +45,7 @@ namespace uComponents.DataTypes.MultiNodeTreePicker
 		/// <param name="ctl"></param>
 		public static void AddJsMNTPClientDependencies(this Control ctl)
 		{
-			ctl.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.MultiNodeTreePicker.MultiNodePickerScripts.js", ClientDependencyType.Javascript);
+			ctl.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.MultiNodeTreePicker.MultiNodePickerScripts.js", ClientDependency.Core.ClientDependencyType.Javascript);
 		}
 	}
 }

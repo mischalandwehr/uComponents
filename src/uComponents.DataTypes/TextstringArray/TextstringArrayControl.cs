@@ -91,9 +91,9 @@ namespace uComponents.DataTypes.TextstringArray
 			base.OnLoad(e);
 
 			// Adds the client dependencies.
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.json2.js", ClientDependencyType.Javascript);
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.TextstringArray.TextstringArray.css", ClientDependencyType.Css);
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.TextstringArray.TextstringArray.js", ClientDependencyType.Javascript);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.Shared.Resources.Scripts.json2.js", ClientDependency.Core.ClientDependencyType.Javascript);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.TextstringArray.TextstringArray.css", ClientDependency.Core.ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.TextstringArray.TextstringArray.js", ClientDependency.Core.ClientDependencyType.Javascript);
 		}
 
 		/// <summary>

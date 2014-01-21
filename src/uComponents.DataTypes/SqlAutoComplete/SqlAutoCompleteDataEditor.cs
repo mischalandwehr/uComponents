@@ -148,8 +148,8 @@ namespace uComponents.DataTypes.SqlAutoComplete
             base.OnLoad(e);
             this.EnsureChildControls();
             
-            this.RegisterEmbeddedClientResource("uComponents.DataTypes.SqlAutoComplete.SqlAutoComplete.css", ClientDependencyType.Css);
-            this.RegisterEmbeddedClientResource("uComponents.DataTypes.SqlAutoComplete.SqlAutoComplete.js", ClientDependencyType.Javascript);
+            this.RegisterEmbeddedClientResource("uComponents.DataTypes.SqlAutoComplete.SqlAutoComplete.css", ClientDependency.Core.ClientDependencyType.Css);
+            this.RegisterEmbeddedClientResource("uComponents.DataTypes.SqlAutoComplete.SqlAutoComplete.js", ClientDependency.Core.ClientDependencyType.Javascript);
 
             string startupScript = @"                
                 <script language='javascript' type='text/javascript'>

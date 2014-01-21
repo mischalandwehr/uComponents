@@ -89,8 +89,8 @@ namespace uComponents.DataTypes.ImageDropdown
 			base.OnLoad(e);
 
 			// get the urls for the embedded resources
-			this.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.ImageDropdown.Scripts.jquery.dd.js", ClientDependencyType.Javascript);
-			this.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.ImageDropdown.Styles.ImageDropdown.css", ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.ImageDropdown.Scripts.jquery.dd.js", ClientDependency.Core.ClientDependencyType.Javascript);
+			this.RegisterEmbeddedClientResource("uComponents.Legacy.DataTypes.ImageDropdown.Styles.ImageDropdown.css", ClientDependency.Core.ClientDependencyType.Css);
 		}
 
 		/// <summary>

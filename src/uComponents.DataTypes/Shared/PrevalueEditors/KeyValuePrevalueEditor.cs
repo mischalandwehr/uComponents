@@ -30,7 +30,7 @@ namespace uComponents.DataTypes.Shared.PrevalueEditors
 			base.OnInit(e);
 
 			// Adds the client dependencies.
-			this.RegisterEmbeddedClientResource(typeof(KeyValuePrevalueEditor), Constants.PrevalueEditorCssResourcePath, ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource(typeof(KeyValuePrevalueEditor), Constants.PrevalueEditorCssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
 		}
 
 		/// <summary>

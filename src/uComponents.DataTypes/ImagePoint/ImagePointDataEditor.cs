@@ -197,8 +197,8 @@ namespace uComponents.DataTypes.ImagePoint
                 }
             }
 
-            this.RegisterEmbeddedClientResource("uComponents.DataTypes.ImagePoint.ImagePoint.css", ClientDependencyType.Css);
-            this.RegisterEmbeddedClientResource("uComponents.DataTypes.ImagePoint.ImagePoint.js", ClientDependencyType.Javascript);
+            this.RegisterEmbeddedClientResource("uComponents.DataTypes.ImagePoint.ImagePoint.css", ClientDependency.Core.ClientDependencyType.Css);
+            this.RegisterEmbeddedClientResource("uComponents.DataTypes.ImagePoint.ImagePoint.js", ClientDependency.Core.ClientDependencyType.Javascript);
 
             string startupScript = @"
                 <script language='javascript' type='text/javascript'>

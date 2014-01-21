@@ -219,7 +219,7 @@ namespace uComponents.DataTypes.Similarity
             base.OnInit(e);
             this.EnsureChildControls();
             // Adds the client dependencies.
-            this.RegisterEmbeddedClientResource(Constants.PrevalueEditorCssResourcePath, ClientDependencyType.Css);
+            this.RegisterEmbeddedClientResource(Constants.PrevalueEditorCssResourcePath, ClientDependency.Core.ClientDependencyType.Css);
         }
 
         /// <summary>

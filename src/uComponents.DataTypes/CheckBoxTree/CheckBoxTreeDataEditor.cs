@@ -179,8 +179,8 @@ namespace uComponents.DataTypes.CheckBoxTree
 			base.OnLoad(e);
 			this.EnsureChildControls();
 
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.CheckBoxTree.CheckBoxTree.css", ClientDependencyType.Css);
-			this.RegisterEmbeddedClientResource("uComponents.DataTypes.CheckBoxTree.CheckBoxTree.js", ClientDependencyType.Javascript);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.CheckBoxTree.CheckBoxTree.css", ClientDependency.Core.ClientDependencyType.Css);
+			this.RegisterEmbeddedClientResource("uComponents.DataTypes.CheckBoxTree.CheckBoxTree.js", ClientDependency.Core.ClientDependencyType.Javascript);
 
 			string startupScript = @"                
 				<script language='javascript' type='text/javascript'>
