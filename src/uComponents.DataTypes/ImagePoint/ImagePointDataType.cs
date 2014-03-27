@@ -1,6 +1,7 @@
 ﻿using System;
 using uComponents.Core;
 using umbraco.cms.businesslogic.datatype;
+using umbraco.editorControls;
 using umbraco.interfaces;
 
 namespace uComponents.DataTypes.ImagePoint
@@ -8,7 +9,7 @@ namespace uComponents.DataTypes.ImagePoint
     /// <summary>
     /// The Image Point data-type.
     /// </summary>
-    public class ImagePointDataType : BaseDataType, IDataType
+    public class ImagePointDataType : umbraco.cms.businesslogic.datatype.BaseDataType, IDataType
     {
         /// <summary>
         /// Private field for the Prevalue Editor.
@@ -92,7 +93,7 @@ namespace uComponents.DataTypes.ImagePoint
             {
                 if (this.data == null)
                 {
-                    this.data = new DefaultData(this);
+                    this.data = new XmlData(this);
                 }
 
                 return this.data;

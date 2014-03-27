@@ -396,6 +396,7 @@
     <Compile Include="Settings.cs" />
     <Compile Include="Shared\AjaxUpload\AjaxUploadHandler.cs" />
     <Compile Include="Shared\AjaxUpload\AjaxUploadHandlerResource.Designer.cs" />
+    <Compile Include="Shared\Enums\EnumHelper.cs" />
     <Compile Include="Shared\Pages\DirectoryBrowser.aspx.cs">
       <DependentUpon>DirectoryBrowser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -551,6 +552,7 @@
     <EmbeddedResource Include="ImagePoint\ImagePoint.js" />
     <EmbeddedResource Include="ImagePoint\ImagePoint.css" />
     <EmbeddedResource Include="ImagePoint\ImagePointMarker.png" />
+    <EmbeddedResource Include="ImagePoint\ImagePointGhost.png" />
     <Content Include="Shared\Pages\DirectoryBrowser.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
