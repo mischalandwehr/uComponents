@@ -53,35 +53,30 @@ namespace uComponents.NotFoundHandlers
 			var success = false;
 
 			// get the current domain name
-			var domainName = HttpContext.Current.Request.ServerVariables["SERVER_NAME"];
-
-			// if there is a port number, append it
-			var port = HttpContext.Current.Request.ServerVariables["SERVER_PORT"];
-			if (!string.IsNullOrEmpty(port) && port != "80")
-			{
-				domainName = string.Concat(domainName, ":", port);
-			}
+			var fqaPath = GetFullyQualifiedApplicationPath(HttpContext.Current);
+			var domainName = string.Concat(fqaPath, url.Split('/')[0]);
 
 			// get the root node id of the domain
 			var rootNodeId = Domain.GetRootFromDomain(domainName);
 
 			try
 			{
-				if (rootNodeId > 0)
-				{
-					// get the node
-					var node = new Node(rootNodeId);
+				// if a valid nodeId isn't returned, then get the top-most content node.
+				if (rootNodeId <= 0)
+					rootNodeId = uQuery.GetRootNode().Children[0].Id;
 
-					// get the property that holds the node id for the 404 page
-					var property = node.GetProperty("umbracoPageNotFound");
-					if (property != null)
+				// get the node
+				var node = new Node(rootNodeId);
+
+				// get the property that holds the node id for the 404 page
+				var property = node.GetProperty("umbracoPageNotFound");
+				if (property != null)
+				{
+					var errorId = property.Value;
+					if (!string.IsNullOrEmpty(errorId))
 					{
-						var errorId = property.Value;
-						if (!string.IsNullOrEmpty(errorId))
-						{
-							// if the node id is numeric, then set the redirectId
-							success = int.TryParse(errorId, out this._redirectId);
-						}
+						// if the node id is numeric, then set the redirectId
+						success = int.TryParse(errorId, out this._redirectId);
 					}
 				}
 			}
@@ -91,6 +86,23 @@ namespace uComponents.NotFoundHandlers
 			}
 
 			return success;
+		}
+
+		/// <summary>
+		/// Gets the fully qualified application path.
+		/// </summary>
+		/// <param name="context">The HTTP context.</param>
+		/// <returns></returns>
+		private string GetFullyQualifiedApplicationPath(HttpContext context)
+		{
+			var uri = context.Request.Url;
+			var port = uri.Port != 80 ? string.Concat(":", uri.Port) : string.Empty;
+			var appPath = string.Format("{0}://{1}{2}{3}", uri.Scheme, uri.Host, port, context.Request.ApplicationPath);
+
+			if (!appPath.EndsWith("/"))
+				appPath += "/";
+
+			return appPath;
 		}
 	}
 }
