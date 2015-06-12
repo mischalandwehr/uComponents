@@ -371,7 +371,7 @@ Date modified: 15th of March, 2011
                 url: settings.AjaxUploadHandlerUrl + "?" + settings.AjaxUploadHandlerGuid + "_Id=" + settings.UniquePropertyId,
                 success: function (responseText) {
                     // Strip any <pre> tags and parse the JSON
-                    var response = jQuery.parseJSON(responseText.replace(/<(\/)?pre[^>]*>/gi, ""));
+                    var response = typeof responseText === "string" ? jQuery.parseJSON(responseText.replace(/<(\/)?pre[^>]*>/gi, "")) : responseText;
 
                     // Check for errors, if there are none do a report on files saved
                     if (response.statusCode !== 200) {
